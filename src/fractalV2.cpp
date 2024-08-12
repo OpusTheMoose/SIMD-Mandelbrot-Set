@@ -5,8 +5,8 @@
 #include <fstream>
 #include <immintrin.h>
 #include <xmmintrin.h>
-#include "fractalV2.hpp"
-#include "colorConverter.hpp"
+#include "../include/fractalV2.hpp"
+#include "../include/colorConverter.hpp"
 
 
 Fractal::Fractal(unsigned int SCRN_WIDTH, unsigned int SCRN_HEIGHT)

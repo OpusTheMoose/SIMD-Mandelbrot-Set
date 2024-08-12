@@ -1,10 +1,10 @@
 #include <glad/glad.h>
 #include <iostream>
 #include <math.h>
-#include "shader.hpp"
+#include "../include/shader.hpp"
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>
-#include "GLRender.hpp"
+#include "../include/GLRender.hpp"
 
 GLRender::GLRender(unsigned int SCREEN_WIDTH, unsigned int SCREEN_HEIGHT)
 {
@@ -19,7 +19,7 @@ GLRender::GLRender(unsigned int SCREEN_WIDTH, unsigned int SCREEN_HEIGHT)
         return;
         }
         
-        Shader ourShader("vertexShader.vs", "fragShader.fs");
+        Shader ourShader("src/vertexShader.vs", "src/fragShader.fs");
        
          float vertices[] = {
         // positions         // texture

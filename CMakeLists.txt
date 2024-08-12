@@ -8,7 +8,7 @@ FetchContent_Declare(SFML
 FetchContent_MakeAvailable(SFML)
 
 
-add_executable(Fractal GLRender.cpp fractalV2.cpp glad.c main.cpp)
+add_executable(Fractal src/GLRender.cpp src/fractalV2.cpp src/glad.c src/main.cpp)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native -fopenmp -pthread -Ofast")
 target_link_libraries(Fractal PRIVATE sfml-graphics)
 

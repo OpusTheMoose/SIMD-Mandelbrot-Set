@@ -2,9 +2,9 @@
 #include <glad/glad.h>
 #include <iostream>
 //#include "fractal.hpp"
-#include "fractalV2.hpp"
-#include "shader.hpp"
-#include "GLRender.hpp"
+#include "../include/fractalV2.hpp"
+#include "../include/shader.hpp"
+#include "../include/GLRender.hpp"
 #include <math.h>
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>

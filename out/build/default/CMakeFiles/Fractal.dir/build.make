@@ -69,76 +69,76 @@ include CMakeFiles/Fractal.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Fractal.dir/flags.make
 
-CMakeFiles/Fractal.dir/GLRender.cpp.o: CMakeFiles/Fractal.dir/flags.make
-CMakeFiles/Fractal.dir/GLRender.cpp.o: ../../../GLRender.cpp
-CMakeFiles/Fractal.dir/GLRender.cpp.o: CMakeFiles/Fractal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/opusthemoose/Fractal/out/build/default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Fractal.dir/GLRender.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Fractal.dir/GLRender.cpp.o -MF CMakeFiles/Fractal.dir/GLRender.cpp.o.d -o CMakeFiles/Fractal.dir/GLRender.cpp.o -c /home/opusthemoose/Fractal/GLRender.cpp
+CMakeFiles/Fractal.dir/src/GLRender.cpp.o: CMakeFiles/Fractal.dir/flags.make
+CMakeFiles/Fractal.dir/src/GLRender.cpp.o: ../../../src/GLRender.cpp
+CMakeFiles/Fractal.dir/src/GLRender.cpp.o: CMakeFiles/Fractal.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/opusthemoose/Fractal/out/build/default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Fractal.dir/src/GLRender.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Fractal.dir/src/GLRender.cpp.o -MF CMakeFiles/Fractal.dir/src/GLRender.cpp.o.d -o CMakeFiles/Fractal.dir/src/GLRender.cpp.o -c /home/opusthemoose/Fractal/src/GLRender.cpp
 
-CMakeFiles/Fractal.dir/GLRender.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fractal.dir/GLRender.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/opusthemoose/Fractal/GLRender.cpp > CMakeFiles/Fractal.dir/GLRender.cpp.i
+CMakeFiles/Fractal.dir/src/GLRender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fractal.dir/src/GLRender.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/opusthemoose/Fractal/src/GLRender.cpp > CMakeFiles/Fractal.dir/src/GLRender.cpp.i
 
-CMakeFiles/Fractal.dir/GLRender.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fractal.dir/GLRender.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/opusthemoose/Fractal/GLRender.cpp -o CMakeFiles/Fractal.dir/GLRender.cpp.s
+CMakeFiles/Fractal.dir/src/GLRender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fractal.dir/src/GLRender.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/opusthemoose/Fractal/src/GLRender.cpp -o CMakeFiles/Fractal.dir/src/GLRender.cpp.s
 
-CMakeFiles/Fractal.dir/fractalV2.cpp.o: CMakeFiles/Fractal.dir/flags.make
-CMakeFiles/Fractal.dir/fractalV2.cpp.o: ../../../fractalV2.cpp
-CMakeFiles/Fractal.dir/fractalV2.cpp.o: CMakeFiles/Fractal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/opusthemoose/Fractal/out/build/default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Fractal.dir/fractalV2.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Fractal.dir/fractalV2.cpp.o -MF CMakeFiles/Fractal.dir/fractalV2.cpp.o.d -o CMakeFiles/Fractal.dir/fractalV2.cpp.o -c /home/opusthemoose/Fractal/fractalV2.cpp
+CMakeFiles/Fractal.dir/src/fractalV2.cpp.o: CMakeFiles/Fractal.dir/flags.make
+CMakeFiles/Fractal.dir/src/fractalV2.cpp.o: ../../../src/fractalV2.cpp
+CMakeFiles/Fractal.dir/src/fractalV2.cpp.o: CMakeFiles/Fractal.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/opusthemoose/Fractal/out/build/default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Fractal.dir/src/fractalV2.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Fractal.dir/src/fractalV2.cpp.o -MF CMakeFiles/Fractal.dir/src/fractalV2.cpp.o.d -o CMakeFiles/Fractal.dir/src/fractalV2.cpp.o -c /home/opusthemoose/Fractal/src/fractalV2.cpp
 
-CMakeFiles/Fractal.dir/fractalV2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fractal.dir/fractalV2.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/opusthemoose/Fractal/fractalV2.cpp > CMakeFiles/Fractal.dir/fractalV2.cpp.i
+CMakeFiles/Fractal.dir/src/fractalV2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fractal.dir/src/fractalV2.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/opusthemoose/Fractal/src/fractalV2.cpp > CMakeFiles/Fractal.dir/src/fractalV2.cpp.i
 
-CMakeFiles/Fractal.dir/fractalV2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fractal.dir/fractalV2.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/opusthemoose/Fractal/fractalV2.cpp -o CMakeFiles/Fractal.dir/fractalV2.cpp.s
+CMakeFiles/Fractal.dir/src/fractalV2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fractal.dir/src/fractalV2.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/opusthemoose/Fractal/src/fractalV2.cpp -o CMakeFiles/Fractal.dir/src/fractalV2.cpp.s
 
-CMakeFiles/Fractal.dir/glad.c.o: CMakeFiles/Fractal.dir/flags.make
-CMakeFiles/Fractal.dir/glad.c.o: ../../../glad.c
-CMakeFiles/Fractal.dir/glad.c.o: CMakeFiles/Fractal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/opusthemoose/Fractal/out/build/default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Fractal.dir/glad.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Fractal.dir/glad.c.o -MF CMakeFiles/Fractal.dir/glad.c.o.d -o CMakeFiles/Fractal.dir/glad.c.o -c /home/opusthemoose/Fractal/glad.c
+CMakeFiles/Fractal.dir/src/glad.c.o: CMakeFiles/Fractal.dir/flags.make
+CMakeFiles/Fractal.dir/src/glad.c.o: ../../../src/glad.c
+CMakeFiles/Fractal.dir/src/glad.c.o: CMakeFiles/Fractal.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/opusthemoose/Fractal/out/build/default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Fractal.dir/src/glad.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Fractal.dir/src/glad.c.o -MF CMakeFiles/Fractal.dir/src/glad.c.o.d -o CMakeFiles/Fractal.dir/src/glad.c.o -c /home/opusthemoose/Fractal/src/glad.c
 
-CMakeFiles/Fractal.dir/glad.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fractal.dir/glad.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/opusthemoose/Fractal/glad.c > CMakeFiles/Fractal.dir/glad.c.i
+CMakeFiles/Fractal.dir/src/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fractal.dir/src/glad.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/opusthemoose/Fractal/src/glad.c > CMakeFiles/Fractal.dir/src/glad.c.i
 
-CMakeFiles/Fractal.dir/glad.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fractal.dir/glad.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/opusthemoose/Fractal/glad.c -o CMakeFiles/Fractal.dir/glad.c.s
+CMakeFiles/Fractal.dir/src/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fractal.dir/src/glad.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/opusthemoose/Fractal/src/glad.c -o CMakeFiles/Fractal.dir/src/glad.c.s
 
-CMakeFiles/Fractal.dir/main.cpp.o: CMakeFiles/Fractal.dir/flags.make
-CMakeFiles/Fractal.dir/main.cpp.o: ../../../main.cpp
-CMakeFiles/Fractal.dir/main.cpp.o: CMakeFiles/Fractal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/opusthemoose/Fractal/out/build/default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Fractal.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Fractal.dir/main.cpp.o -MF CMakeFiles/Fractal.dir/main.cpp.o.d -o CMakeFiles/Fractal.dir/main.cpp.o -c /home/opusthemoose/Fractal/main.cpp
+CMakeFiles/Fractal.dir/src/main.cpp.o: CMakeFiles/Fractal.dir/flags.make
+CMakeFiles/Fractal.dir/src/main.cpp.o: ../../../src/main.cpp
+CMakeFiles/Fractal.dir/src/main.cpp.o: CMakeFiles/Fractal.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/opusthemoose/Fractal/out/build/default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Fractal.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Fractal.dir/src/main.cpp.o -MF CMakeFiles/Fractal.dir/src/main.cpp.o.d -o CMakeFiles/Fractal.dir/src/main.cpp.o -c /home/opusthemoose/Fractal/src/main.cpp
 
-CMakeFiles/Fractal.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fractal.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/opusthemoose/Fractal/main.cpp > CMakeFiles/Fractal.dir/main.cpp.i
+CMakeFiles/Fractal.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fractal.dir/src/main.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/opusthemoose/Fractal/src/main.cpp > CMakeFiles/Fractal.dir/src/main.cpp.i
 
-CMakeFiles/Fractal.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fractal.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/opusthemoose/Fractal/main.cpp -o CMakeFiles/Fractal.dir/main.cpp.s
+CMakeFiles/Fractal.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fractal.dir/src/main.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/opusthemoose/Fractal/src/main.cpp -o CMakeFiles/Fractal.dir/src/main.cpp.s
 
 # Object files for target Fractal
 Fractal_OBJECTS = \
-"CMakeFiles/Fractal.dir/GLRender.cpp.o" \
-"CMakeFiles/Fractal.dir/fractalV2.cpp.o" \
-"CMakeFiles/Fractal.dir/glad.c.o" \
-"CMakeFiles/Fractal.dir/main.cpp.o"
+"CMakeFiles/Fractal.dir/src/GLRender.cpp.o" \
+"CMakeFiles/Fractal.dir/src/fractalV2.cpp.o" \
+"CMakeFiles/Fractal.dir/src/glad.c.o" \
+"CMakeFiles/Fractal.dir/src/main.cpp.o"
 
 # External object files for target Fractal
 Fractal_EXTERNAL_OBJECTS =
 
-Fractal: CMakeFiles/Fractal.dir/GLRender.cpp.o
-Fractal: CMakeFiles/Fractal.dir/fractalV2.cpp.o
-Fractal: CMakeFiles/Fractal.dir/glad.c.o
-Fractal: CMakeFiles/Fractal.dir/main.cpp.o
+Fractal: CMakeFiles/Fractal.dir/src/GLRender.cpp.o
+Fractal: CMakeFiles/Fractal.dir/src/fractalV2.cpp.o
+Fractal: CMakeFiles/Fractal.dir/src/glad.c.o
+Fractal: CMakeFiles/Fractal.dir/src/main.cpp.o
 Fractal: CMakeFiles/Fractal.dir/build.make
 Fractal: _deps/sfml-build/lib/libsfml-graphics-d.so.2.6.1
 Fractal: _deps/sfml-build/lib/libsfml-window-d.so.2.6.1

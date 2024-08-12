@@ -1,4 +1,4 @@
-centerX: -0.29631092301249895016
-centerY: 0.84501448794677125331
-initalZoom: 2.0
-enableZoom: 1
+centerX: 0.84501448794677125331
+centerY: -0.29631092301249895016
+initalZoom: 4.0
+enableZoom: 0

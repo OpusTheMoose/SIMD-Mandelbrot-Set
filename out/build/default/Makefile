@@ -633,101 +633,101 @@ sfml-audio/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
 .PHONY : sfml-audio/fast
 
-GLRender.o: GLRender.cpp.o
-.PHONY : GLRender.o
+src/GLRender.o: src/GLRender.cpp.o
+.PHONY : src/GLRender.o
 
 # target to build an object file
-GLRender.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/GLRender.cpp.o
-.PHONY : GLRender.cpp.o
+src/GLRender.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/GLRender.cpp.o
+.PHONY : src/GLRender.cpp.o
 
-GLRender.i: GLRender.cpp.i
-.PHONY : GLRender.i
+src/GLRender.i: src/GLRender.cpp.i
+.PHONY : src/GLRender.i
 
 # target to preprocess a source file
-GLRender.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/GLRender.cpp.i
-.PHONY : GLRender.cpp.i
+src/GLRender.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/GLRender.cpp.i
+.PHONY : src/GLRender.cpp.i
 
-GLRender.s: GLRender.cpp.s
-.PHONY : GLRender.s
+src/GLRender.s: src/GLRender.cpp.s
+.PHONY : src/GLRender.s
 
 # target to generate assembly for a file
-GLRender.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/GLRender.cpp.s
-.PHONY : GLRender.cpp.s
+src/GLRender.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/GLRender.cpp.s
+.PHONY : src/GLRender.cpp.s
 
-fractalV2.o: fractalV2.cpp.o
-.PHONY : fractalV2.o
+src/fractalV2.o: src/fractalV2.cpp.o
+.PHONY : src/fractalV2.o
 
 # target to build an object file
-fractalV2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/fractalV2.cpp.o
-.PHONY : fractalV2.cpp.o
+src/fractalV2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/fractalV2.cpp.o
+.PHONY : src/fractalV2.cpp.o
 
-fractalV2.i: fractalV2.cpp.i
-.PHONY : fractalV2.i
+src/fractalV2.i: src/fractalV2.cpp.i
+.PHONY : src/fractalV2.i
 
 # target to preprocess a source file
-fractalV2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/fractalV2.cpp.i
-.PHONY : fractalV2.cpp.i
+src/fractalV2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/fractalV2.cpp.i
+.PHONY : src/fractalV2.cpp.i
 
-fractalV2.s: fractalV2.cpp.s
-.PHONY : fractalV2.s
+src/fractalV2.s: src/fractalV2.cpp.s
+.PHONY : src/fractalV2.s
 
 # target to generate assembly for a file
-fractalV2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/fractalV2.cpp.s
-.PHONY : fractalV2.cpp.s
+src/fractalV2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/fractalV2.cpp.s
+.PHONY : src/fractalV2.cpp.s
 
-glad.o: glad.c.o
-.PHONY : glad.o
+src/glad.o: src/glad.c.o
+.PHONY : src/glad.o
 
 # target to build an object file
-glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/glad.c.o
-.PHONY : glad.c.o
+src/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/glad.c.o
+.PHONY : src/glad.c.o
 
-glad.i: glad.c.i
-.PHONY : glad.i
+src/glad.i: src/glad.c.i
+.PHONY : src/glad.i
 
 # target to preprocess a source file
-glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/glad.c.i
-.PHONY : glad.c.i
+src/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/glad.c.i
+.PHONY : src/glad.c.i
 
-glad.s: glad.c.s
-.PHONY : glad.s
+src/glad.s: src/glad.c.s
+.PHONY : src/glad.s
 
 # target to generate assembly for a file
-glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/glad.c.s
-.PHONY : glad.c.s
+src/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/glad.c.s
+.PHONY : src/glad.c.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Fractal.dir/build.make CMakeFiles/Fractal.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -778,18 +778,18 @@ help:
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... GLRender.o"
-	@echo "... GLRender.i"
-	@echo "... GLRender.s"
-	@echo "... fractalV2.o"
-	@echo "... fractalV2.i"
-	@echo "... fractalV2.s"
-	@echo "... glad.o"
-	@echo "... glad.i"
-	@echo "... glad.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/GLRender.o"
+	@echo "... src/GLRender.i"
+	@echo "... src/GLRender.s"
+	@echo "... src/fractalV2.o"
+	@echo "... src/fractalV2.i"
+	@echo "... src/fractalV2.s"
+	@echo "... src/glad.o"
+	@echo "... src/glad.i"
+	@echo "... src/glad.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
