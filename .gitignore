@@ -1,4 +1,6 @@
 out/
 .vscode/
-makefile/
+Makefile
 CMakePresets.json
+*.exe
+*.out
