@@ -1,3 +1,0 @@
-/home/opusthemoose/Fractal/out/build/default/_deps/sfml-subbuild/CMakeFiles/sfml-populate.dir
-/home/opusthemoose/Fractal/out/build/default/_deps/sfml-subbuild/CMakeFiles/edit_cache.dir
-/home/opusthemoose/Fractal/out/build/default/_deps/sfml-subbuild/CMakeFiles/rebuild_cache.dir
