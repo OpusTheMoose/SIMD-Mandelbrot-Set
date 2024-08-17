@@ -16,7 +16,7 @@ int main()
    
   
     window.setActive(true);
-    window.setFramerateLimit(60);
+    //window.setFramerateLimit(60);
     
    
     GLRender *renderer = new GLRender(WIN_WIDTH, WIN_HEIGHT);

@@ -25,7 +25,7 @@ Fractal::Fractal(unsigned int SCRN_WIDTH, unsigned int SCRN_HEIGHT)
     
     for (int y = 0; y < HEIGHT; y++)
     {
-        coords[y + WIDTH] = (y / static_cast<float>(WIDTH) - 0.3);
+        coords[y + WIDTH] = y / static_cast<float>(WIDTH) - 0.4;
     }
 
     std::ifstream settings("settings.txt");
@@ -84,7 +84,7 @@ uint8_t* Fractal::RenderSet()
     static const double CENTER_Y = this->center_y;
     const double ZOOM = this->zoom;
  
-    //#pragma omp parallel for simd
+    #pragma omp parallel for simd
    
     for (int i = 0; i < SCRN_WIDTH * SCRN_HEIGHT; ++i)
     {
@@ -179,30 +179,25 @@ uint8_t* Fractal::RenderSetSIMD()
 
     static const double CENTER_X = this->center_x;
     static const double CENTER_Y = this->center_y;
+
     const double ZOOM = this->zoom;
 
-    static const __m256i ONE = _mm256_set_epi64x(1, 1, 1, 1);
-    static const __m256d TWOF = _mm256_set1_pd(2.0);
-    static const __m256d ESCAPE_RADIUS = _mm256_set1_pd(255.0);
 
     #pragma omp parallel for
     for (int i = 0; i < (SCRN_WIDTH * SCRN_HEIGHT) ; i += 4)
     {
         // const double x0 = (coords[i % SCRN_WIDTH] * ZOOM) + CENTER_X;
-        const __m256d x0 = _mm256_set_pd(
-            (coords[(i + 3) % SCRN_WIDTH] * ZOOM) + CENTER_X,
-            (coords[(i + 2) % SCRN_WIDTH] * ZOOM) + CENTER_X,
-            (coords[(i + 1) % SCRN_WIDTH] * ZOOM) + CENTER_X,
-            (coords[i % SCRN_WIDTH] * ZOOM) + CENTER_X
+        const __m256d x0 = _mm256_add_pd(
+            _mm256_mul_pd(_mm256_load_pd(&coords[i % SCRN_WIDTH]), _mm256_set1_pd(ZOOM)), 
+            _mm256_set1_pd(CENTER_X)
         );
     
         // const double y0 = (coords[(i / SCRN_WIDTH) + SCRN_WIDTH] * ZOOM) + CENTER_Y;
-        const __m256d y0 = _mm256_set_pd(
-            (coords[(i / SCRN_WIDTH) + SCRN_WIDTH] * ZOOM) + CENTER_Y,
-            (coords[((i + 1) / SCRN_WIDTH) + SCRN_WIDTH] * ZOOM) + CENTER_Y,
-            (coords[((i + 2) / SCRN_WIDTH) + SCRN_WIDTH] * ZOOM) + CENTER_Y,
-            (coords[((i + 3) / SCRN_WIDTH) + SCRN_WIDTH] * ZOOM) + CENTER_Y
+         const __m256d y0 = _mm256_add_pd(
+            _mm256_mul_pd(_mm256_set1_pd(coords[(i / SCRN_WIDTH) + SCRN_WIDTH]), _mm256_set1_pd(ZOOM)), 
+            _mm256_set1_pd(CENTER_Y)
         );
+       
 
         //Initalize vectors for escape time algorithm.                    
         __m256d x = _mm256_setzero_pd();
@@ -220,7 +215,7 @@ uint8_t* Fractal::RenderSetSIMD()
           __m256d xtemp = _mm256_add_pd(_mm256_sub_pd(_mm256_mul_pd(x, x), _mm256_mul_pd(y, y)), x0);
           
           //y = 2*x*y + y0;
-          y = _mm256_add_pd(_mm256_mul_pd(_mm256_mul_pd(x, y), TWOF), y0);
+          y = _mm256_add_pd(_mm256_mul_pd(_mm256_mul_pd(x, y), _mm256_set1_pd(2.0)), y0);
           //Previous function uses x, so we didnt want to update the actual value of x until now.
           x = xtemp;
           //zn = x*x + y*y
@@ -228,11 +223,11 @@ uint8_t* Fractal::RenderSetSIMD()
           zn = _mm256_blendv_pd(_mm256_add_pd(_mm256_mul_pd(x, x), _mm256_mul_pd(y, y)), zn, _mm256_xor_pd(mask, _mm256_set1_pd(-1.0)));
          
            //zn > 4
-           __m256d cmp = _mm256_cmp_pd(zn, ESCAPE_RADIUS, _CMP_LT_OQ);
+           __m256d cmp = _mm256_cmp_pd(zn, _mm256_set1_pd(255.0), _CMP_LT_OQ);
            //Creates a new mask. If a cmp lane is set to 0, set the corresponding mask lane to 0.
           mask = _mm256_and_pd(mask, cmp);
        
-          __m256i plus_one = _mm256_add_epi64(iters, ONE);
+          __m256i plus_one = _mm256_add_epi64(iters, _mm256_set_epi64x(1, 1, 1, 1));
           iters = _mm256_blendv_epi8(iters, plus_one, _mm256_castpd_si256(mask));
           iter++;
         
