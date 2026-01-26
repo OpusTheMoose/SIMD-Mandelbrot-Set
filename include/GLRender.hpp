@@ -1,8 +1,5 @@
-#include <glad/glad.h>
-#include <iostream>
+#include <GL/glew.h>
 #include <math.h>
-
-#include "shader.hpp"
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>
 #pragma once

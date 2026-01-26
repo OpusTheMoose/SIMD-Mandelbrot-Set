@@ -1,4 +1,3 @@
-#include <glad/glad.h>
 #include <iostream>
 #include <math.h>
 #include "../include/shader.hpp"
@@ -12,14 +11,15 @@ GLRender::GLRender(unsigned int SCREEN_WIDTH, unsigned int SCREEN_HEIGHT)
         this->WIN_HEIGHT = SCREEN_HEIGHT;
         unsigned int VBO;
 
-    
-        if (!gladLoadGL())
+        // Glew init return GLEW_OK on success 
+        if (glewInit() != GLEW_OK)
         {
         std::cout << "Failed to initialize GLAD" << std::endl;
         return;
         }
         
-        Shader ourShader("src/vertexShader.vs", "src/fragShader.fs");
+        // It's relative to the build folder. Future me would not do this~!
+        Shader ourShader("../src/vertexShader.vs", "../src/fragShader.fs");
        
          float vertices[] = {
         // positions         // texture

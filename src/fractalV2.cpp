@@ -28,7 +28,7 @@ Fractal::Fractal(unsigned int SCRN_WIDTH, unsigned int SCRN_HEIGHT)
         coords[y + WIDTH] = y / static_cast<float>(WIDTH) - 0.4;
     }
 
-    std::ifstream settings("settings.txt");
+    std::ifstream settings("../settings.txt");
     if (settings.fail())
     {
         std::cout << "ERROR: FAILED TO OPEN SETTINGS" << std::endl;

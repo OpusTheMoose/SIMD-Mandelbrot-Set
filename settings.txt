@@ -1,4 +1,4 @@
 centerX: -0.5
 centerY: 0.0
 initalZoom: 4.0
-enableZoom: 0
+enableZoom: 1

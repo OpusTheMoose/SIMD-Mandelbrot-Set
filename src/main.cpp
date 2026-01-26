@@ -1,5 +1,5 @@
 
-#include <glad/glad.h>
+#include <GL/glew.h>
 #include <iostream>
 //#include "fractal.hpp"
 #include "../include/fractalV2.hpp"

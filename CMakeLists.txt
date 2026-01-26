@@ -8,9 +8,11 @@ FetchContent_Declare(SFML
 FetchContent_MakeAvailable(SFML)
 
 
-add_executable(Fractal src/GLRender.cpp src/fractalV2.cpp src/glad.c src/main.cpp)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native -fopenmp -pthread -Ofast")
-target_link_libraries(Fractal PRIVATE sfml-graphics)
+find_package(GLEW REQUIRED)
+
+add_executable(Fractal src/GLRender.cpp src/fractalV2.cpp src/main.cpp)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native -fopenmp -pthread -O3")
+target_link_libraries(Fractal PRIVATE sfml-graphics GLEW GL)
 
 
 include(CTest)

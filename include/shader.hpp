@@ -1,13 +1,12 @@
 #ifndef SHADER_H
 #define SHADER_H
 
-#include <glad/glad.h>
-
+#include <GL/glew.h>
 #include <string>
 #include <fstream>
 #include <sstream>
 #include <iostream>
-
+// THIS IS NOT MY CODE! It comes from LearnOpenGL
 class Shader
 {
 public:

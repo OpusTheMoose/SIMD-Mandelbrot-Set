@@ -1,7 +1,6 @@
-#include <iostream>
-
 #pragma once
 
+#include <stdint.h>
 const unsigned int WIN_WIDTH = 800;
 const unsigned int WIN_HEIGHT = 600;
 
