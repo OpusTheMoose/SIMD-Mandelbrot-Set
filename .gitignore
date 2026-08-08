@@ -4,3 +4,4 @@ Makefile
 CMakePresets.json
 *.exe
 *.out
+build/
