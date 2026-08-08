@@ -1,22 +1,15 @@
 #include <iostream>
 #include <math.h>
 #include "../include/shader.hpp"
-#include <SFML/Graphics.hpp>
-#include <SFML/OpenGL.hpp>
 #include "../include/GLRender.hpp"
 
 GLRender::GLRender(unsigned int SCREEN_WIDTH, unsigned int SCREEN_HEIGHT)
 {
-        this->WIN_WIDTH = SCREEN_WIDTH;
-        this->WIN_HEIGHT = SCREEN_HEIGHT;
+        this->texture_width= SCREEN_WIDTH;
+        this->texture_height = SCREEN_HEIGHT;
         unsigned int VBO;
 
-        // Glew init return GLEW_OK on success 
-        if (glewInit() != GLEW_OK)
-        {
-        std::cout << "Failed to initialize GLAD" << std::endl;
-        return;
-        }
+    
         
         // It's relative to the build folder. Future me would not do this~!
         Shader ourShader("../src/vertexShader.vs", "../src/fragShader.fs");
@@ -48,7 +41,7 @@ GLRender::GLRender(unsigned int SCREEN_WIDTH, unsigned int SCREEN_HEIGHT)
         glGenTextures(1, &texture);
         glBindTexture(GL_TEXTURE_2D, texture); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
 
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, WIN_WIDTH, WIN_HEIGHT, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, this->texture_width, this->texture_height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
       
 
         // set texture filtering parameters
@@ -64,7 +57,7 @@ GLRender::GLRender(unsigned int SCREEN_WIDTH, unsigned int SCREEN_HEIGHT)
 void GLRender::Render(uint8_t *pixels)
 {
      
-    glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, WIN_WIDTH, WIN_HEIGHT, GL_RGB, GL_UNSIGNED_BYTE, pixels );
+    glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, this->texture_width, this->texture_height, GL_RGB, GL_UNSIGNED_BYTE, pixels );
    
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f); 
     glClear(GL_COLOR_BUFFER_BIT);

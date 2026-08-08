@@ -1,7 +1,6 @@
-#include <GL/glew.h>
 #include <math.h>
-#include <SFML/Graphics.hpp>
-#include <SFML/OpenGL.hpp>
+#include <SDL3/SDL.h>
+#include "glad/gl.h"
 #pragma once
 
 
@@ -16,6 +15,6 @@ class GLRender
     private:
         unsigned int VAO;
         unsigned int texture;
-        unsigned int WIN_WIDTH;
-        unsigned int WIN_HEIGHT;
+        unsigned int texture_width;
+        unsigned int texture_height;
 };

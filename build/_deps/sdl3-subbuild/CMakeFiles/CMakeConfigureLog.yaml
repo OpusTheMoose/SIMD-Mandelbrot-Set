@@ -1,0 +1,94 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/opus/"
+      - "/home/opus/1.4.335.0/x86_64/bin/"
+      - "/home/opus/.local/bin/"
+      - "/home/opus/.config/Code - OSS/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/opus/.config/Code - OSS/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/opus/.cargo/bin/"
+      - "/home/opus/emsdk/"
+      - "/home/opus/emsdk/upstream/emscripten/"
+      - "/home/opus/emsdk/node/22.16.0_64bit/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/opt/rocm/bin/"
+      - "/home/opus/intellij/idea-IU-253.29346.240/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/home/opus/uname"
+      - "/home/opus/1.4.335.0/x86_64/bin/uname"
+      - "/home/opus/.local/bin/uname"
+      - "/home/opus/.config/Code - OSS/User/globalStorage/github.copilot-chat/debugCommand/uname"
+      - "/home/opus/.config/Code - OSS/User/globalStorage/github.copilot-chat/copilotCli/uname"
+      - "/home/opus/.cargo/bin/uname"
+      - "/home/opus/emsdk/uname"
+      - "/home/opus/emsdk/upstream/emscripten/uname"
+      - "/home/opus/emsdk/node/22.16.0_64bit/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/opus"
+        - "/home/opus/1.4.335.0/x86_64/bin"
+        - "/home/opus/.local/bin"
+        - "/home/opus/.config/Code - OSS/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/opus/.config/Code - OSS/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/opus"
+        - "/home/opus/1.4.335.0/x86_64/bin"
+        - "/home/opus/.local/bin"
+        - "/home/opus/.cargo/bin"
+        - "/home/opus/emsdk"
+        - "/home/opus/emsdk/upstream/emscripten"
+        - "/home/opus/emsdk/node/22.16.0_64bit/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/opt/rocm/bin"
+        - "/home/opus/emsdk"
+        - "/home/opus/emsdk/node/22.16.0_64bit/bin"
+        - "/home/opus/emsdk/upstream/emscripten"
+        - "/home/opus/intellij/idea-IU-253.29346.240/bin"
+        - "/home/opus/emsdk"
+        - "/home/opus/emsdk/node/22.16.0_64bit/bin"
+        - "/home/opus/emsdk/upstream/emscripten"
+        - "/home/opus/intellij/idea-IU-253.29346.240/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Linux - 7.1.3-arch2-1 - x86_64
+...

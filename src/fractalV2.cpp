@@ -25,7 +25,7 @@ Fractal::Fractal(unsigned int SCRN_WIDTH, unsigned int SCRN_HEIGHT)
     
     for (int y = 0; y < HEIGHT; y++)
     {
-        coords[y + WIDTH] = y / static_cast<float>(WIDTH) - 0.4;
+        coords[y + WIDTH] = y / static_cast<float>(HEIGHT) - 0.4;
     }
 
     std::ifstream settings("../settings.txt");
