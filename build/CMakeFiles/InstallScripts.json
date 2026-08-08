@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/opus/SIMD-Mandelbrot-Set/build/cmake_install.cmake",
-		"/home/opus/SIMD-Mandelbrot-Set/build/_deps/sdl3-build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

@@ -1,1 +1,0 @@
-/usr/bin/c++  -march=native -fopenmp -pthread -O3 -Wl,--dependency-file=CMakeFiles/Fractal.dir/link.d CMakeFiles/Fractal.dir/src/GLRender.cpp.o CMakeFiles/Fractal.dir/src/fractalV2.cpp.o CMakeFiles/Fractal.dir/src/main.cpp.o CMakeFiles/Fractal.dir/src/gl.c.o -o Fractal  -lSDL3 -lGL
